@@ -1,0 +1,44 @@
+.calendar-wrapper {
+  max-width: 900px;
+  margin: 20px auto;
+  color: black;
+}
+
+/* כותרת היומן */
+.fc .fc-toolbar-title {
+  color: #3f255e;
+}
+
+/* עיצוב האירועים ביומן */
+.fc .fc-daygrid-event {
+  background-color: #693b88;
+  color: white;
+  border: none;
+}
+
+/* כפתור הוספת אימון עבור מנהלת */
+.admin-controls {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.admin-controls button {
+  padding: 10px 25px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #3f255e;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.admin-controls button:hover {
+  background-color: #2d1a43;
+}
+/* في ملف CalendarView.css */
+.fc-event, .fc-daygrid-event {
+  border-radius: 7px;
+  font-size: 16px;
+}
