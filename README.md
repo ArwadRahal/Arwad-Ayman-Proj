@@ -1,1 +1,1 @@
-# Arwad Rahal & #Ayman Zeed
+# Arwad Rahal & Ayman Zeed
