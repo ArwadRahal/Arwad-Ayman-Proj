@@ -1,0 +1,13 @@
+<!-- public/default-avatar.svg -->
+<svg width="90" height="90" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="45" cy="45" r="45" fill="url(#paint0_linear)"></circle>
+  <ellipse cx="45" cy="38" rx="16" ry="14" fill="#fff" opacity="0.95"></ellipse>
+  <ellipse cx="45" cy="68" rx="24" ry="15" fill="#fff" opacity="0.85"></ellipse>
+  <circle cx="45" cy="34" r="9" fill="#d0b4ee"></circle>
+  <defs>
+    <linearGradient id="paint0_linear" x1="0" y1="0" x2="90" y2="90" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ffb5f6"></stop>
+      <stop offset="1" stop-color="#b49fff"></stop>
+    </linearGradient>
+  </defs>
+</svg>

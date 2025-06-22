@@ -1,0 +1,89 @@
+.trainee-dashboard {
+  display: flex;
+}
+
+.dashboard-content {
+  flex: 1;
+  padding: 30px;
+  background: #f9f9ff;
+}
+
+.schedule-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.day-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+  width: 160px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.event-box {
+  background-color: #e5f1ff;
+  border-radius: 6px;
+  padding: 8px;
+  margin-bottom: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.event-box:hover {
+  background-color: #cde6ff;
+}
+
+.empty {
+  color: #999;
+  font-style: italic;
+}
+.trainee-dashboard {
+  display: flex;
+}
+
+.dashboard-content {
+  flex: 1;
+  padding: 30px;
+  background: #f9f9ff;
+}
+
+.schedule-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.day-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+  width: 160px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.event-box {
+  background-color: #e5f1ff;
+  border-radius: 6px;
+  padding: 8px;
+  margin-bottom: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.event-box:hover {
+  background-color: #cde6ff;
+}
+
+.event-box.registered {
+  background-color: #c8f7c5; /* لون أخضر فاتح */
+  border: 2px solid #28a745;
+}
+
+.empty {
+  color: #999;
+  font-style: italic;
+}
