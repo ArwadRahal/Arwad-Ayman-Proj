@@ -1,0 +1,286 @@
+.trainee-dashboard {
+  display: flex;
+}
+
+.dashboard-content {
+  flex: 1;
+  padding: 30px;
+  background: #f9f9ff;
+}
+
+.schedule-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.day-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+  width: 160px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.event-box {
+  background-color: #e5f1ff;
+  border-radius: 6px;
+  padding: 8px;
+  margin-bottom: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.event-box:hover {
+  background-color: #cde6ff;
+}
+
+.empty {
+  color: #999;
+  font-style: italic;
+}
+.trainee-dashboard {
+  display: flex;
+}
+
+.dashboard-content {
+  flex: 1;
+  padding: 30px;
+  background: #f9f9ff;
+}
+
+.schedule-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.day-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+  width: 160px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.event-box {
+  background-color: #e5f1ff;
+  border-radius: 6px;
+  padding: 8px;
+  margin-bottom: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.event-box:hover {
+  background-color: #cde6ff;
+}
+
+.event-box.registered {
+  background-color: #c8f7c5; /* لون أخضر فاتح */
+  border: 2px solid #28a745;
+}
+
+.empty {
+  color: #999;
+  font-style: italic;
+}
+/* === رأس المتدرّبة === */
+.trainee-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 16px;
+  margin-top: 16px;
+}
+.trainee-avatar {
+  width: 94px;
+  height: 94px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #e4d3f9;
+  box-shadow: 0 2px 12px #e4d3f950;
+  background: #fff;
+  margin-bottom: 10px;
+}
+
+/* العنوان */
+.schedule-title {
+  color: #7c459e;
+  text-align: center;
+  margin: 20px 0 16px 0;
+  font-size: 1.25rem;
+}
+
+/* === الشريط التحفيزي === */
+.motivational-banner {
+  background: linear-gradient(90deg, #e8d6f7 0%, #f8e7ff 100%);
+  color: #7c459e;
+  font-size: 1.07rem;
+  font-weight: bold;
+  border-radius: 13px;
+  padding: 14px 0 13px 0;
+  margin: 0 auto 20px auto;
+  text-align: center;
+  max-width: 420px;
+  box-shadow: 0 2px 10px #edd3f780;
+  letter-spacing: 1px;
+}
+
+/* === جدول الأسبوع كما هو في الكوتش/أدمن === */
+.calendar-weekly {
+  margin-top: 10px;
+  background: rgba(255,255,255,0.6);
+  border-radius: 24px;
+  box-shadow: 0 4px 26px #e7e5f6b0;
+  padding: 18px 24px 30px 24px;
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* عناوين الأيام */
+.week-header {
+  display: flex;
+  background: rgba(255,255,255,0.13);
+  padding: 7px 0 7px 0;
+  border-radius: 9px;
+  margin-bottom: 0.8rem;
+  box-shadow: 0 2px 12px #ebe6f2a6;
+}
+.weekday {
+  flex: 1;
+  text-align: center;
+}
+.day-name {
+  font-weight: bold;
+  color: #684cb2;
+  font-size: 1.1em;
+}
+.day-date {
+  font-size: 0.92em;
+  color: #4b4888;
+  margin-top: 2px;
+}
+
+/* أيام الأسبوع (الأعمدة) */
+.week-grid {
+  display: flex;
+  gap: 12px;
+  margin-top: 0;
+}
+.day-column {
+  flex: 1;
+  min-height: 140px;
+  background: rgba(255,255,255,0.92);
+  border-radius: 12px;
+  padding: 10px 5px 12px 5px;
+  box-sizing: border-box;
+  box-shadow: 0 1px 9px #e7e5f6e6;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  transition: box-shadow 0.15s;
+  overflow: hidden;
+}
+
+/* جلسة تدريب */
+.session-card {
+  background: #f3edff;
+  border-radius: 9px;
+  padding: 10px 4px 10px 4px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: background 0.16s, transform 0.14s;
+  font-size: 15px;
+  box-shadow: 0 1px 8px #e3d7fd36;
+  width: 100%;
+  text-align: center;
+  color: #3f255e;
+  box-sizing: border-box;
+}
+.session-card:hover {
+  background: #cebaff;
+  transform: scale(1.04);
+}
+.empty-day {
+  color: #b2afc1;
+  text-align: center;
+  margin-top: 22px;
+  font-size: 1em;
+}
+
+/* Responsive */
+@media (max-width: 1000px) {
+  .calendar-weekly { padding: 13px 6px 18px 6px; }
+  .week-header, .week-grid { gap: 3px; }
+  .day-column { min-height: 90px; }
+}
+@media (max-width: 600px) {
+  .calendar-weekly { padding: 4px 1vw 12px 1vw; }
+  .week-header, .week-grid { gap: 1.5px; }
+  .day-column { min-height: 50px; font-size: 0.87em; }
+  .session-card { font-size: 13px; padding: 7px 2px; }
+}
+.subscription-status {
+  position: absolute;
+  top: 28px;
+  right: 42px;
+  min-width: 200px;
+  max-width: 320px;
+  padding: 11px 20px 11px 18px;
+  border-radius: 19px;
+  font-size: 1.01rem;
+  box-shadow: 0 2px 16px #d9cff733;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  z-index: 25;
+  background: rgba(236, 255, 244, 0.9);
+  color: #20784a;
+  border: 1.5px solid #b6f1c3;
+  transition: background 0.23s, color 0.22s;
+  font-weight: 500;
+}
+.subscription-status.soon {
+  background: rgba(255, 246, 232, 0.93);
+  color: #e96908;
+  border: 1.6px solid #ffd4a2;
+}
+.subscription-status.expired {
+  background: rgba(255,237,237,0.96);
+  color: #c22136;
+  border: 1.7px solid #f5a6a6;
+}
+.subscription-status .icon {
+  font-size: 1.32em;
+  margin-left: 5px;
+}
+.subscription-status .renew-btn {
+  background: #e96908;
+  color: #fff;
+  border: none;
+  border-radius: 13px;
+  padding: 3.5px 13px;
+  font-size: 0.95em;
+  margin-right: 7px;
+  margin-left: 0;
+  font-weight: 600;
+  box-shadow: 0 0 8px #e2ba9855;
+  cursor: pointer;
+  transition: 0.15s;
+}
+.subscription-status .renew-btn:hover {
+  background: #ca3d11;
+}
+@media (max-width: 800px) {
+  .subscription-status {
+    right: 6vw;
+    top: 14px;
+    padding: 8px 11px;
+    min-width: 130px;
+    font-size: 0.97em;
+  }
+}
